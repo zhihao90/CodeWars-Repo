@@ -135,6 +135,10 @@ function queueTime(customers, n) {
 }
 
 
+//A SIMPLER SOLUTION
+//Simply total the time needed per till by assigning each customer, one at a time, to the till with the lowest wait time until there are no customers left. 
+//Then return the till with the longest wait time since that is how long it will take to service all customers.
+
 function queueTime(customers, n) {
  let tills = new Array(n).fill(0)
 
@@ -146,4 +150,4 @@ function queueTime(customers, n) {
 return Math.max(...tills)
 }
 
-console.log(queueTime([3,5,6,6,4,2,23,4,56], 3))
+console.log(queueTime([3,5,6,6,4,2,23,4,56], 3))b
