@@ -23,18 +23,8 @@ In case of an empty array return 0. You will not be tested with invalid input (i
 
 
 
-function countSmileys(arr) {
-    let eyes = [":", ";"];
-    let noses = ["-", "~"];
-    let mouths= [")", "D"];
-    let count = 0
-
-    arr.forEach((item) => {
-        if((eyes.includes(item[0]) && mouths.includes(item[1])) || (eyes.includes(item[0]) && noses.includes(item[1]) && mouths.includes(item[2]))){
-            count++
-        }
-    })
-
-    return count
-
+function domainName(url){
+    console.log(url.findIndex(a => a == ".com"))
   }
+
+domainName("http://github.com/carbonfive/raygun")
