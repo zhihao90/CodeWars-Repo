@@ -46,7 +46,7 @@ function sumPairs(ints, s) {
     }
     
     
-    obj[ints[i]] = i
+    obj[ints[i]] = true;
   }
   
   //if the above loop completes without any pairs found, return undefined
