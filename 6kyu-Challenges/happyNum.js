@@ -42,9 +42,7 @@ function happyNumbers(x){
         result.push(arr[0])
     }
 
-    
-
-    }
+}
 
     return result
      
