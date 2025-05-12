@@ -29,12 +29,19 @@ function dblLinear(n) {
     let nextZ = arr[z] * 3 + 1
     
     let next = Math.min(nextY,nextZ)
+
+
+    
     
     arr.push(next)
     
     if (next == nextY) {
-      y++}
-    if (next == nextZ) {z++
+      y++
+    console.log(`Between ${nextY} and ${nextZ}, we choose ${next}. We increase y to ${y}`)
+    }
+    if (next == nextZ) {
+        z++
+        console.log(`Between ${nextY} and ${nextZ}, we choose ${next}. We increase y to ${y}`)
                         }
   }
   
@@ -42,3 +49,5 @@ function dblLinear(n) {
   
 }
 
+
+console.log(dblLinear(10))
